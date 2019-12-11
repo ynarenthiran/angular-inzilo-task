@@ -1,3 +1,29 @@
-p {
-  font-family: Lato;
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+}
+.main-content {
+  overflow: auto;
+  height: calc(100vh - 113px + 32px);
+}
+.active, .active:hover, .active:focus {
+  background: rgba(77, 140, 41, 1);
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 1);
+  outline: rgba(77, 140, 41, .9) auto 5px;
+}
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
 }

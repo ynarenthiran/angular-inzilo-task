@@ -1,1 +1,82 @@
-/* Add application styles & imports to this file! */
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+.navbar {
+  background-color: #4d8c29;
+  color: rgba(255, 255, 255, 1);
+  height: 50px !important;
+}
+.footer {
+  background-color: rgba(77, 140, 41, 0.5);
+  text-decoration: blink;
+  font-size: 12px;
+  height: 25px !important;
+}
+.footer span {
+  flex: 1 1 auto;
+  text-align: right;
+}
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background-color: #4d8c29;
+}
+.mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #4d8c29;
+}
+/* .mat-select-value {
+    display: table-cell;
+    max-width: max-content !important;
+    width: auto !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mat-select {
+    display: inline-block;
+    width: auto !important;
+    outline: 0;
+} */
+.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background-color: #4d8c29;
+}
+.patient-toolbar {
+  font-size: 16px;
+}
+.toolbar {
+      margin: 1% 0% 1% 0%;
+}
+.balinj-btn-success {
+    background-color: #4d8c29;
+    color: white;
+}
+.balinj-pull-right {
+  float: right;
+}
+.balinj-full-width {
+  width: 100%;
+}
+.balinj-full-height {
+  height: 100%;
+}
+.balinj-m1 {
+  margin: 1% !important;
+}
+.balinj-capitalize {
+  text-transform: capitalize
+}
+.balinj-common-table {
+  height: 100%;
+  overflow: auto;
+  width: 100%;
+}
+.balinj-error-height {
+  height: 30%;
+}
+.balinj-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+

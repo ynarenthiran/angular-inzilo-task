@@ -1,4 +1,51 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<!-- <app-table></app-table> -->
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer style="width: 264px;" class="sidenav" fixedInViewport="false" [fixedTopGap]="initdata.options.top" [fixedBottomGap]="initdata.options.bottom" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
+    <mat-toolbar class="navbar">
+      <span>BalinJ InfoTech</span>
+    </mat-toolbar>
+    <!-- <mat-nav-list *ngFor="let page of initdata.pages; let i=index">
+      <mat-list-item *ngIf="!page.children && page.url" mat-list-item [routerLink]="[page.url]" routerLinkActive="active active-link" (click)="getHeader()">{{page.name}}</mat-list-item>
+      <a target="a" *ngIf="!page.children && page.href" mat-list-item href={{page.href}}>{{page.name}}</a>
+      <mat-expansion-panel *ngIf="page.children">
+        <mat-expansion-panel-header>
+          <mat-panel-title>{{page.name}}</mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-nav-list *ngFor="let p of page.children">
+          <mat-list-item *ngIf="p.name" mat-list-item [routerLink]="[p.url]" routerLinkActive="active active-link" (click)="getHeader()">{{p.name}}</mat-list-item>
+        </mat-nav-list>
+      </mat-expansion-panel>
+    </mat-nav-list> -->
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="navbar">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon" fontIcon="menu"></mat-icon>
+      </button>
+      <span>{{initdata?.header}} {{initdata?.subHeader}}</span>
+      <!-- <span class="example-spacer"></span>
+      <span>{{initdata.userName}}</span>
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>person_pin</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu" [yPosition]="'below'" class="profile-menu">
+        <button mat-menu-item *ngIf="!initdata.userName" (click)="loginDialog(0)">
+          <mat-icon>person</mat-icon>
+          <span>Sign In</span>
+        </button>
+        <button mat-menu-item *ngIf="!initdata.userName" (click)="loginDialog(1)">
+          <mat-icon>person_add</mat-icon>
+          <span>Sign Up</span>
+        </button>
+        <button mat-menu-item *ngIf="initdata.userName" (click)="logout()">
+          <mat-icon>power_settings_new</mat-icon>
+          <span>Sign Out</span>
+        </button>
+      </mat-menu> -->
+    </mat-toolbar>
+    <div class="main-content">
+      <!-- <router-outlet></router-outlet> -->
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
